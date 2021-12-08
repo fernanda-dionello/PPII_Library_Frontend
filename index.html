@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <title>Clients</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Clients</h1>
+    </header>
+    <main>
+     
+        <button class="button register mobile" id="register">Register</button>
+
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Registration Number</th>
+                    <th>Name</th>
+                    <th>Cellphone</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Client</h2>
+                    <span class="modal-close" id="closeModal">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" id="name" data-registration="new" class="modal-field" placeholder="Name" required>
+                    <input type="text" id="cellphone" class="modal-field" placeholder="Cellphone" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="button register" id="save">Save</button>
+                    <button class="button cancel" id="cancel">Cancel</button>
+                </footer>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
